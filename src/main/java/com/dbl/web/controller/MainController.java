@@ -59,8 +59,9 @@ public class MainController {
 	public ModelAndView accesssDenied() {
 
 		ModelAndView model = new ModelAndView();
-		
 		//check if user is login will exist in branch2?
+		//check if user is login, this is master
+		//this is master line2
 		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 		if (!(auth instanceof AnonymousAuthenticationToken)) {
 			UserDetails userDetail = (UserDetails) auth.getPrincipal();
