@@ -60,7 +60,7 @@ public class MainController {
 
 		ModelAndView model = new ModelAndView();
 		
-		//check if user is login?
+		//check if user is login will exist in branch2?
 		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 		if (!(auth instanceof AnonymousAuthenticationToken)) {
 			UserDetails userDetail = (UserDetails) auth.getPrincipal();
